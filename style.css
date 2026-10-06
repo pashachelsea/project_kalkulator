@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f4f6fb;
+    line-height: 1.6;
+}
+
+
+/* ======================== NAVBAR ======================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 32px;
+
+    background-color: #1f3864;
+    color: white;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ======================== KARTU ======================== */
+
+.kartu {
+    max-width: 700px;
+    margin: 30px auto;
+
+    padding: 24px;
+
+    background-color: white;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+/* ======================== INPUT ======================== */
+
+.input-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-top: 20px;
+}
+
+.input-grid label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+.input-grid input {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+
+/* ======================== TOMBOL ======================== */
+
+.tombol-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background-color: #1f3864;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#tombol-hapus {
+    width: 100%;
+    margin-top: 16px;
+}
+
+
+/* ======================== HASIL ======================== */
+
+.hasil {
+    margin-top: 20px;
+
+    padding: 16px;
+
+    background-color: #f4f6fb;
+
+    border-radius: 5px;
+}
+
+.hasil h3 {
+    margin-bottom: 8px;
+}
+
+#statistik,
+#sifat-hasil {
+    margin-top: 8px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+
+/* ======================== TOMBOL PANDUAN ======================== */
+
+#tombol-panduan {
+    width: 100%;
+
+    margin-top: 16px;
+}
+
+
+/* ======================== PANDUAN ======================== */
+
+#panduan {
+    display: none;
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    padding: 24px;
+
+    background-color: white;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+#panduan h2 {
+    margin-bottom: 12px;
+
+    color: #1f3864;
+}
+
+#panduan ol {
+    padding-left: 24px;
+}
+
+#panduan li {
+    margin-bottom: 8px;
+}
+
+
+/* ======================== FOOTER ======================== */
+
+footer {
+    padding: 20px 32px;
+
+    text-align: center;
+
+    background-color: #1f3864;
+
+    color: white;
+}
+
+
+/* ======================== RESPONSIVE ======================== */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .kartu {
+        padding: 16px;
+    }
+
+    .tombol-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .input-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
